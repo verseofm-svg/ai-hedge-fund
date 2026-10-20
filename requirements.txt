@@ -4,6 +4,7 @@ apscheduler==3.10.4
 redis==5.0.3
 requests==2.31.0
 streamlit==1.32.0
-yfinance==0.4.28
+yfinance
 alpaca-py==0.16.0
 openai==1.14.0
+
