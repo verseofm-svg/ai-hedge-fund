@@ -6,8 +6,11 @@ st.set_page_config(page_title="AI Hedge Fund", page_icon="🏛️", layout="cent
 st.title("🏛️ AI Hedge Fund Control Center")
 st.markdown("Automated multi-agent trading team managed from your iOS device.")
 
-# Enter your deployed backend URL here later
-BACKEND_URL = st.text_input("Backend API URL", value="https://your-render-backend-url.onrender.com")
+# Automatically strip trailing slashes to prevent 404 connection errors
+BACKEND_URL = st.text_input(
+    "Backend API URL", 
+    value="https://ai-hedge-fund-7sl1.onrender.com"
+).rstrip('/')
 
 col1, col2 = st.columns(2)
 
